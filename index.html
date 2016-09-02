@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>homework9_10</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/Multi-Column-Select.css">
+  	<link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript"  src="js/jquery.jcarousel.min.js"></script>
+  	<script type="text/javascript" src="js/jcarousel.basic.js"></script>
+    <script type="text/javascript" src="js/scriptcheckbox.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/Multi-Column-Select.js"></script>
+    <script type="text/javascript" src="js/jquery.color.js"></script>
+    <!-- <script type="text/javascript" src="js/script_navigation.js"></script> -->
+</head>
+<body>
+    <div class="wrap">
+<!-- animated menu -->
+        <nav>
+            <ul>
+                <li><a href="#">Nav 1</a></li>
+                <li><a href="#">Nav 2</a></li>
+                <li class="dropdown">
+                    <a href="#">Nav 3</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Nav 3.1</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nav 3.4</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.4.1</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Nav 3.4.2</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Nav 3.4.2.1</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+<!-- /animated menu -->
+
+<!-- Карусель -->
+        <div class="wrapper">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/img1.jpg" width="600" height="400" ></li>
+                        <li><img src="img/img2.jpg" width="600" height="400" ></li>
+                        <li><img src="img/img3.jpg" width="600" height="400" ></li>
+                        <li><img src="img/img4.jpg" width="600" height="400" ></li>
+                        <li><img src="img/img5.jpg" width="600" height="400" ></li>
+                        <li><img src="img/img6.jpg" width="600" height="400" ></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+           <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+           <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        </div>
+<!-- /Карусель -->
+<!-- нестандартный Select -->
+        <form action="#" method="GET">
+            <div id="selectcontrol">
+                <select name="car">
+                        <option value="Audi">Audi</option>
+                        <option value="Bugatti">Bugatti</option>
+                        <option value="Chrysler">Chrysler</option>
+                        <option value="Daihatsu">Daihatsu</option>
+                        <option value="Ford">Ford</option>
+                        <option value="GM">General Motors</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Infiniti">Infiniti</option>
+                        <option value="Jeep">Jeep</option>
+                        <option value="Kia">Kia</option>
+                 </select>
+            </div>
+            <input type="submit" value="Submit" />
+        </form>
+<!-- /нестандартный Select -->
+<!--нестандартный checkbox jquery  -->
+        <form class="jquery">
+        <p>Checkbox jQuery</p>
+            <div>
+                <label for="ch1">label 1</label>
+                <input type="checkbox" class="niceCheck" id="ch1" tabindex="1">
+            </div>
+            <div>
+                <label for="ch2">label 2</label>
+                <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2">
+            </div>
+            <div>
+                <label for="ch3">label 3</label>
+                <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" >
+            </div>
+                
+        </form>
+
+<!--/нестандартный checkbox jquery  -->
+<!-- нестандартній checkbox css3 -->
+        <div class="cs">
+            <p id="css">Checkbox CSS</p>
+            <input type="checkbox" id="test-check1">
+            <label for="test-check1" id="label">Чекбокс 1:</label>
+        </div>
+<!-- /нестандартній checkbox css3 -->
+        
+
+    </div>
+  	
+</body>
+
+</html>
+
+
